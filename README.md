@@ -12,10 +12,16 @@ This repository is designed to create a GUI application within the program MATLA
 The application analyzes images obtained from confocal microscopy z-stacks, stained according to the protocol described in Hammad et al, 2014.
 The images analyzed in our work can be found in the folder labeled "IFADO_PHx_stacks".
 
-To run the application and replicate our analysis, create a clone of this repository, and use MATLAB 2018b (or later version) to launch the extension "appdesigner", and select "Liver_Segmentation_App.mlapp".
+To run the application and replicate our analysis, create a clone of this repository.
+The GUI app runs through the use of the BioFormats Toolbox, which can be viewed and downloaded here: https://www.openmicroscopy.org/bio-formats/downloads/
+
+Using MATLAB 2018b (or later version), first add the executible jar file, "bioformats_package.jar" to the path. This file is downloaded within the BioFormats Toolbox, and must be added to the javaclasspath in MATLAB. 
+
+>> javaclasspath('C:/Path_to/bioformats_package.jar')
+
+To start the GUI, open the "Liver_Segmentation_App.mlapp".
 
 For instructions on how to navigate the GUI app, please refer to supplementary files of our paper. 
-
 
 
 References: 
